@@ -12,8 +12,7 @@ Reducer<CountState> buildReducer() {
 }
 
 CountState _updateCount(CountState state, Action action) {
-
   final CountState newState = state.clone();
-  newState..count=action.payload;
+  newState..count = action.payload;
   return newState;
 }
