@@ -1,11 +1,10 @@
 import 'package:fish_redux/fish_redux.dart';
 
 class CountState implements Cloneable<CountState> {
-  int count=0;
+  int count = 0;
   @override
   CountState clone() {
-    return CountState()
-        ..count=count;
+    return CountState()..count = count;
   }
 }
 

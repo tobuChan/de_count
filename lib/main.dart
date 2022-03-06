@@ -1,7 +1,8 @@
 ///需要使用hide隐藏Page
 import 'package:fish_redux/fish_redux.dart';
-import 'package:flutter/cupertino.dart'hide Page;
+import 'package:flutter/cupertino.dart' hide Page;
 import 'package:flutter/material.dart' hide Page;
+import 'count/detail/page.dart';
 import 'count/page.dart';
 
 void main() {
@@ -13,6 +14,7 @@ Widget createApp() {
   final AbstractRoutes routes = PageRoutes(
     pages: <String, Page<Object, dynamic>>{
       "CountPage": CountPage(),
+      "DetailPage": DetailPage(),
     },
   );
 
